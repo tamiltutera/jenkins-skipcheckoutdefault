@@ -1,0 +1,13 @@
+pipeline{
+    agent any
+    options {
+        skipDefaultCheckout true
+    }
+    stages {
+        stage('Hi'){
+            steps{
+                sh 'cat file.txt'
+            }
+        }
+    }
+}
